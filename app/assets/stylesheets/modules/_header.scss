@@ -1,12 +1,86 @@
 header {
+    font-family: 'Fredoka One', cursive;
     position: relative;
-    background-color: gray;
+    background-color: #99CC99;
 
     .main {
         width: 1020px;
         margin: 0 auto;
         padding: 8px 0 0;
 
-        &__downside {}
+        &__upside {
+            &__name {
+                font-size: 26px;
+            }
+        }
+
+        &__downside {
+            &__button {
+                display: flex;
+                padding-left: 800px;
+            }
+        }
     }
+
+    .button {
+        padding: 15px;
+        margin-right: 10px;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+
+    .button:hover {
+        background-color: red;
+        border-color: blue;
+        color: blue;
+    }
+
+    .button::before,
+    .button::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .button::before {
+        right: 0;
+    }
+
+    .button::after {
+        left: 0;
+    }
+
+    .button:hover::before,
+    .button:hover::after {
+        width: 0;
+        background-color: blue;
+    }
+
+    .icon {
+        font-size: 55px;
+        padding-bottom: 15px;
+        color: #333;
+    }
+
+    .icon:hover {
+        border-color: blue;
+        color: red;
+        background-color: #99CC99;
+    }
+
+    // .button {
+    //     display: inline-block;
+    //     padding: 0.5em 1em;
+    //     text-decoration: none;
+    //     background: #668ad8;
+    //     color: #FFF;
+    //     border-bottom: solid 4px #627295;
+    //     border-radius: 3px;
+    // }
 }

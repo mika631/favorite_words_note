@@ -1,12 +1,21 @@
 %header
   .main
     .main__upside
-      .main__upside__icon
+      .main__upside__name
         favorite words note
       .main__upside__search
-        -# form_tag入れる
-        = fa_icon 'search', class: 'icon'
+        -# = form_tag path, method: :get, class:"main__upside__search__form" do
+        -#   = text_field_tag :keyword, params[:keyword], class: "main__upside__search__form--folder", placeholder:"探したい人を入力してください"
+        -#   = button_tag class:'main__upside__search--button'
+        -#     = fa_icon 'search', class: 'main__upside__search--icon'
     .main__downside
-      .main__downside__person
-      .main__downside__genre
-      .main__downside__user
+      .main__downside__button
+        .main__downside__button__person
+          =link_to "#", class:'button' do
+            person
+        .main__downside__button__genre
+          =link_to "#", class:'button' do
+            genre
+        .main__downside__user
+          =link_to "#" do
+            =fa_icon 'user', class: 'icon'
