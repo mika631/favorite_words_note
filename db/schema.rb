@@ -14,9 +14,10 @@ ActiveRecord::Schema.define(version: 2019_11_06_181213) do
 
   create_table "words", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "word"
+    t.text "image"
+    t.string "person"
+    t.string "genre"
     t.integer "user_id", null: false
-    t.integer "person_id", null: false
-    t.integer "genre_id", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
