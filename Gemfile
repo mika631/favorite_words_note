@@ -70,3 +70,4 @@ gem 'font-awesome-rails'
 gem 'fog-aws' #画像アップロードgem
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'

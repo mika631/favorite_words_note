@@ -1,0 +1,161 @@
+.new {
+    &__contents {
+        &__field {
+            font-family: 'Fredoka One', cursive;
+            padding: 30px;
+            font-size: 30px;
+
+            // text-align: center;
+
+            &__input {
+                margin: 100px;
+
+                &__word {
+                    &__box {
+                        width: 700px;
+                        height: 70px;
+                        border: solid 3px #6091d3;
+                        border-radius: 10px;
+                        color: #6091d3;
+                        padding: 10px;
+                        margin: 0 0 0 40px;
+                    }
+                }
+
+                &__person {
+                    &__box {
+                        border: solid 3px #6091d3;
+                        border-radius: 10px;
+                        color: #6091d3;
+                        padding: 30px;
+                        margin: 40px;
+                    }
+                }
+
+                &__genre {
+                    &__box {
+                        &__top {
+                            height: 40px;
+                            margin-left: 40px;
+                        }
+                    }
+                }
+
+                // &__genre {
+                //     &__box {
+                //         border: solid 3px #6091d3;
+                //         border-radius: 10px;
+                //         color: #6091d3;
+                //         padding: 30px;
+                //         margin: 40px;
+                //     }
+                // }
+
+                &__image {
+                    &-title {
+                        margin: 10px 0 0 40px;
+                        font-size: 20px;
+                        font-family: 'Fredoka One', cursive;
+                    }
+
+                    &__box {
+                        &-icon {}
+
+                        &-pre {
+                            margin: 10px 0 0 40px;
+                            width: 300px;
+                            height: 300px;
+                            background-color: #6091d3;
+                            border: dashed 5px black;
+                        }
+
+                        // border: solid 3px #6091d3;
+                        // border-radius: 10px;
+                        // color: #6091d3;
+                        // padding: 20px;
+                        // margin: 40px;
+                   
+                    }
+
+                    // &__file {
+                    //     display: none;
+                    // }
+               
+                }
+            }
+
+            &__back {
+                margin: 40px 40px;
+
+                &__button {
+                    display: inline-block;
+                    padding: 0.5em 1em;
+                    text-decoration: none;
+                    background: #668ad8; /*ボタン色*/
+                    color: #FFF;
+                    border-bottom: solid 4px #627295;
+                    border-radius: 3px;
+                }
+
+                &__button:active {
+                    -webkit-transform: translateY(4px);
+                    transform: translateY(4px); /*下に動く*/
+                    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); /*影を小さく*/
+                    border-bottom: none;
+                }
+            }
+
+            &__submit {
+                &__button {
+                    height: 50px;
+                    margin-left: 40px;
+                    display: inline-block;
+                    padding: 0.5em 1em;
+                    text-decoration: none;
+                    background: #ff69b4; /*ボタン色*/
+                    color: #FFF;
+                    border-bottom: solid 4px #627295;
+                    border-radius: 3px;
+                }
+
+                &__button:active {
+                    -webkit-transform: translateY(4px);
+                    transform: translateY(4px); /*下に動く*/
+                    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); /*影を小さく*/
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin: 10px 0 10px 40px;
+        font-size: 20px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    #myImage {
+        display: none;
+    }
+
+    i {
+        padding: 10px 0 0 40px;
+        font-size: 60px;
+        color: blue;
+    }
+
+    i:hover {
+        color: red;
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    // .hidden {
+    //     display: none;
+    // }
+}

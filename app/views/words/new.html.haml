@@ -1,0 +1,43 @@
+.new
+  .new__contents
+  = form_for @word, method: :post do |f|
+    .new__contents__field
+      Let's input about favorite words
+    .new__contens__field__input
+      .new__contents__field__input__word
+        %h2.new__contents__field__input__word-title
+          word
+        =f.text_area :word, cols:30, rows: 10, placeholder:"好きな言葉を入力してください", maxlength:100, type:"text", name:"word", class:"new__contents__field__input__word__box"
+
+      .new__contents__field__input__person
+        %h2.new__contents__field__input__person-title
+          person
+        =f.text_field :wordcreater,  placeholder:"言葉を残した人の名前を入力してください", maxlength:100, type:"text", name:"person", class:"new__contents__field__input__word__box"
+      .new__contents__field__input__genre
+        %h2.new__contents__field__input__genre-title
+          genre
+        .new__contents__field__input__genre__box
+          %select.new__contents__field__input__genre__box__top
+            %option{value: "initial"}---
+            %option{value: "happy"}happy
+            %option{value: "impression"}impression
+            %option{value: "cheer up"}cheer up
+            %option{value: "another"}another
+      .new__contents__field__input__image
+        .new__contents__field__input__image-title
+          image
+        .new__contents__field__input__image__box
+        
+          -# =f.label :image, class:"new__contents__field__input__image",for:"myImage" do
+          -#   = fa_icon "image"
+          -#   = f.file_field :image,class:'hidden',id:'myImage'
+        .new__contents__field__input__image__box-pre  
+          %img#preview
+    .new__contents__field__back
+      .new__contents__field__back__button
+        =link_to "/", class:'new__contents__field__back__button' do
+          back
+    .new__contents__field__submit
+      -# .new__contents__field__submit__button
+        -# =link_to "#", class:'new__contents__field__submit__button' do
+    = f.submit class:'new__contents__field__submit__button'
