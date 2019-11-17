@@ -9,9 +9,7 @@ header {
         padding: 8px 0 0;
 
         &__upside {
-            &__name {
-                font-size: 26px;
-            }
+            &__name {}
         }
 
         &__downside {
@@ -32,6 +30,7 @@ header {
         border: 2px solid #333;
         color: #fff;
         line-height: 50px;
+        font-size: 20px;
     }
 
     .button:hover {
@@ -83,4 +82,9 @@ header {
     //     border-bottom: solid 4px #627295;
     //     border-radius: 3px;
     // }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
 }
