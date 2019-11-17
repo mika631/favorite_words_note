@@ -1,0 +1,2 @@
+module WordcreatersHelper
+end
