@@ -19,8 +19,7 @@ class WordcreatersController < ApplicationController
 
   private
     def wordcreater_params
-      params.require(:wordcreater).permit(:id, :name, words_attributes:[:id, :word])
-
+      params.require(:wordcreater).permit(:id, :name, words_attributes:[:id, :word, :image, :genre_id, :condition])
     end
 
 

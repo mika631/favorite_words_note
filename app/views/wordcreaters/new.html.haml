@@ -19,12 +19,8 @@
         %h2.new__contents__field__input__genre-title
           genre
         .new__contents__field__input__genre__box
-          %select.new__contents__field__input__genre__box__top
-            %option{value: "initial"}---
-            %option{value: "happy"}happy
-            %option{value: "impression"}impression
-            %option{value: "cheer up"}cheer up
-            %option{value: "another"}another
+          .new__contents__field__input__genre__box__top
+            = t.collection_select :genre_id,Genre.all, :id,:name,{include_blank: '---'}
       .new__contents__field__input__image
         .new__contents__field__input__image-title
           image

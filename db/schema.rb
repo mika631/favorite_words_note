@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2019_11_14_074203) do
   create_table "words", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "word", null: false
     t.string "image"
+    t.integer "genre_id", null: false
     t.bigint "wordcreater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
