@@ -1,0 +1,52 @@
+// Place all the styles related to the words controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+article {
+    font-family: $mainfont;
+    background: $mainBackGround;
+    height: auto;
+
+    // background-color: aqua;
+
+    .note {
+        color: grey;
+        font-size: 30px;
+        padding: 100px;
+
+        // margin: 0 auto;
+
+        &__box {
+            padding: 0.5em 1em;
+            margin: 2em 0;
+            color: #5d627b;
+            background: white;
+            border-left: solid 5px #5d627b;
+            box-shadow: 0 3px 5px rgba(204, 28, 28, 0.22);
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all  0.3s ease;
+            height: auto;
+            display: flex;
+
+            &__word {
+                margin: 10px;
+            }
+        }
+
+        &__box:hover {
+            background-color: yellow;
+        }
+    }
+
+    .picture {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
