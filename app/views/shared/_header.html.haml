@@ -11,12 +11,21 @@
         -#     = fa_icon 'search', class: 'main__upside__search--icon'
     .main__downside
       .main__downside__button
-        .main__downside__button__person
-          =link_to "#", class:'button' do
-            person
-        .main__downside__button__genre
-          =link_to "#", class:'button' do
-            genre
+        .main__downside__button__content
+        - if user_signed_in?
+          .main__downside__button__content__logout
+          =link_to destroy_user_session_path, method: :delete, class:'button' do
+            .main__downside__button__content__logout-name
+              log out
+            -# .main__downside__button__content__post
+            -# = link_to "投稿する",new_wordcreater_path, method: :get, class:'button' do
+        - else
+          .main__downside__button__content__login
+          =link_to new_user_session_path,method: :get, class:'button' do
+            log in
+            -# .main__downside__button__content__signin
+            -#   =link_to "新規登録", class:'button' do
+          
         .main__downside__user
           =link_to "#" do
             =fa_icon 'user', class: 'icon'
