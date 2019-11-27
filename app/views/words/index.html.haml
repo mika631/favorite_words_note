@@ -1,12 +1,19 @@
 = render 'shared/header'
 %article
-  .box
-    .note
-      - @words.each do |word|
-        =link_to "/words/#{word.id}" do
-          .note__box
-            %p.note__box__word
-              = word.word
-            .note__box__image
-              = image_tag word.image.url, class:"picture" if word.image.present?
+  .rand
+    recomend words
+    -@random.each do |random|
+      .rand__box
+        %p.rand__box__word
+          = random.word
+        .rand__box__image
+          = image_tag random.image.url, class:"picture" if random.image.present?
+  .note
+    - @words.each do |word|
+      =link_to "/words/#{word.id}" do
+        .note__box
+          %p.note__box__word
+            = word.word
+          .note__box__image
+            = image_tag word.image.url, class:"picture" if word.image.present?
   = render 'shared/pencil'

@@ -8,27 +8,54 @@ article {
     height: auto;
 
     // background-color: aqua;
+    .rand {
+        @include indexcolorfont-size;
+
+        background-image: url(flower.jpg);
+
+        // background-color: #dcdcdc;
+        margin: 0,10px;
+
+        &__box {
+            @include indexdisplay;
+
+            background-color: aqua;
+
+            &__word {
+                margin: 10px;
+            }
+        }
+
+        &__box:hover {
+            background-color: pink;
+        }
+    }
 
     .note {
-        color: grey;
-        font-size: 30px;
-        padding: 100px;
+        @include indexcolorfont-size;
+
+        // color: grey;
+        // font-size: 30px;
+        // padding: 100px;
 
         // margin: 0 auto;
 
         &__box {
-            padding: 0.5em 1em;
-            margin: 2em 0;
-            color: #5d627b;
+            @include indexdisplay;
+
+            // padding: 0.5em 1em;
+            // margin: 2em 0;
+            // color: #5d627b;
             background: white;
-            border-left: solid 5px #5d627b;
-            box-shadow: 0 3px 5px rgba(204, 28, 28, 0.22);
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all  0.3s ease;
-            height: auto;
-            display: flex;
+
+            // border-left: solid 5px #5d627b;
+            // box-shadow: 0 3px 5px rgba(204, 28, 28, 0.22);
+            // -webkit-transition: all 0.3s ease;
+            // -moz-transition: all 0.3s ease;
+            // -o-transition: all 0.3s ease;
+            // transition: all  0.3s ease;
+            // height: auto;
+            // display: flex;
 
             &__word {
                 margin: 10px;
