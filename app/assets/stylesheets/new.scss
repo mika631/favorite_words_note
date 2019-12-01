@@ -19,6 +19,7 @@
                         color: #6091d3;
                         padding: 10px;
                         margin: 0 0 0 40px;
+                        outline: none;
                     }
                 }
 
@@ -29,6 +30,7 @@
                         color: #6091d3;
                         padding: 30px;
                         margin: 40px;
+                        outline: none;
                     }
                 }
 
@@ -37,23 +39,15 @@
                         &__top {
                             height: 40px;
                             margin-left: 40px;
+                            font: 16px;
+                            outline: none;
                         }
                     }
                 }
 
-                // &__genre {
-                //     &__box {
-                //         border: solid 3px #6091d3;
-                //         border-radius: 10px;
-                //         color: #6091d3;
-                //         padding: 30px;
-                //         margin: 40px;
-                //     }
-                // }
-
                 &__image {
                     &-title {
-                        margin: 10px 0 0 40px;
+                        margin: 30px 0 0 40px;
                         font-size: 20px;
                         font-family: 'Fredoka One', cursive;
                     }
@@ -68,19 +62,7 @@
                             background-color: #6091d3;
                             border: dashed 5px black;
                         }
-
-                        // border: solid 3px #6091d3;
-                        // border-radius: 10px;
-                        // color: #6091d3;
-                        // padding: 20px;
-                        // margin: 40px;
-                   
                     }
-
-                    // &__file {
-                    //     display: none;
-                    // }
-               
                 }
             }
 
@@ -139,7 +121,7 @@
     }
 
     i {
-        padding: 10px 0 0 40px;
+        // padding: 10px 0 0 40px;
         font-size: 60px;
         color: blue;
     }
@@ -150,6 +132,10 @@
         cursor: hand;
     }
 
+    select {
+        height: 50px;
+        width: 100px;
+    }
 
     // .hidden {
     //     display: none;
