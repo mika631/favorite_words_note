@@ -1,0 +1,27 @@
+= render 'shared/header'
+.show
+  .note
+    %ul.note__box
+      %li.note__box__title
+        word
+        .note__box__title__contents
+          = @word.word
+      %li.note__box__title
+        person
+        .note__box__title__contents
+          = @wordcreater.name
+      %li.note__box__title
+        genre
+        .note__box__title__contents
+          =Genre.find(@word.genre.id).name
+      %li.note__box__title
+        image
+        .note__box__title__image-box
+          = image_tag @word.image.url, class:"picture" if @word.image.present?
+      %li.note__box__title
+        user name
+        .note__box__title__contents
+          = @user.name
+    .note__button
+      = link_to "/" do
+        top page
