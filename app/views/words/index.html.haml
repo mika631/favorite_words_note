@@ -3,11 +3,12 @@
   .rand
     recommend
     -@random.each do |random|
-      .rand__box
-        %p.rand__box__word
-          = random.word
-        .rand__box__image
-          = image_tag random.image.url, class:"picture" if random.image.present?
+      =link_to "/words/#{random.id}" do
+        .rand__box
+          %p.rand__box__word
+            = random.word
+          .rand__box__image
+            = image_tag random.image.url, class:"picture" if random.image.present?
   .note
     - @words.each do |word|
       =link_to "/words/#{word.id}" do
