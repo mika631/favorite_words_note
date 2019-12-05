@@ -1,8 +1,8 @@
+= render 'shared/header'
 .new
   .new__contents
   = form_for @wordcreater do |f|
     .new__contents__field
-      Let's input about favorite words
     .new__contens__field__input
     = f.fields_for :words do |t|
       .new__contents__field__input__word
