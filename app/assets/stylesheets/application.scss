@@ -9,3 +9,12 @@
 @import "modules/_pencil.scss";
 @import "show";
 @import "user";
+@import "userspage";
+
+html {
+    background: $mainBackGround;
+    height:100%
+}
+body{
+  height:100%
+}
