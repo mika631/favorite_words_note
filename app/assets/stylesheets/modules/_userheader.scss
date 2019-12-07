@@ -1,0 +1,123 @@
+header {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    background-color: #99CC99;
+
+    .user {
+        width: 1020px;
+
+        // margin: 0 auto;
+        // padding: 8px 0 0;
+        padding-left: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &__upside {
+            &__name {}
+        }
+
+        &__downside {
+            &__button {
+                display: flex;
+                margin-top: 20px;
+
+                &__content {
+                    &__logout {
+                        &__name {
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    &__post {
+                        width: 120px;
+                        height: 53px;
+                    }
+
+                    &__login {
+                        // width: 80px;
+                        // height: 53px;
+                   
+                    }
+
+                    &__signin {
+                        width: 120px;
+                        height: 53px;
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        width: 60px;
+
+        // text-align: center;
+        height: 30px;
+        padding: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 25px;
+        font-size: 17px;
+    }
+
+    .button:hover {
+        background-color: red;
+        border-color: blue;
+        color: blue;
+    }
+
+    .button::before,
+    .button::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .button::before {
+        right: 0;
+    }
+
+    .button::after {
+        left: 0;
+    }
+
+    .button:hover::before,
+    .button:hover::after {
+        width: 0;
+        background-color: blue;
+    }
+
+    .button-a {
+        font-size: 50px;
+        padding-bottom: 15px;
+        color: #333;
+        margin-left: 10px;
+    }
+
+    .button-a:hover {
+        border-color: blue;
+        color: red;
+        background-color: #99CC99;
+    }
+
+    // .button {
+    //     display: inline-block;
+    //     padding: 0.5em 1em;
+    //     text-decoration: none;
+    //     background: #668ad8;
+    //     color: #FFF;
+    //     border-bottom: solid 4px #627295;
+    //     border-radius: 3px;
+    // }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
+}
