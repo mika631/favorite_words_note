@@ -1,0 +1,10 @@
+= render 'shared/userheader'
+.mypage
+  .mypage__title
+    = @username + "'s page"
+  .mypage__note
+    - @words.each do |word|
+      =link_to "/words/#{word.id}" do
+        .mypage__note__box
+          %p.mypage-note__box__word
+            = word.word
