@@ -17,15 +17,16 @@
           =link_to destroy_user_session_path, method: :delete, class:'button' do
             .main__downside__button__content__logout-name
               log out
-            -# .main__downside__button__content__post
-            -# = link_to "投稿する",new_wordcreater_path, method: :get, class:'button' do
         - else
-          .main__downside__button__content__login
-          =link_to new_user_session_path,method: :get, class:'button' do
-            log in
-            -# .main__downside__button__content__signin
-            -#   =link_to "新規登録", class:'button' do
+          .main__downside__button__content__in
+            .main__downside__button__content__in__login
+            =link_to new_user_session_path,method: :get, class:'button' do
+              log in
+            .main__downside__button__content__in__signin
+              =link_to "新規登録", class:'button' do
+                sign in
           
         .main__downside__user
-          =link_to "#" do
+        -if user_signed_in?
+          =link_to "users/#{current_user.id}" do
             =fa_icon 'user', class: 'icon'

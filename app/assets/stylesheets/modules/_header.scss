@@ -5,8 +5,9 @@ header {
 
     .main {
         width: 1020px;
-        margin: 0 auto;
-        padding: 8px 0 0;
+        padding-left: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
         &__upside {
             &__name {}
@@ -15,13 +16,41 @@ header {
         &__downside {
             &__button {
                 display: flex;
-                padding-left: 800px;
+                margin-top: 20px;
+
+                &__content {
+                    &__logout {
+                        &__name {
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    &__post {
+                        width: 120px;
+                        height: 53px;
+                    }
+
+                    &__in {
+                        display: flex;
+
+                        &__login {
+                            
+                        }
+
+                        &__signin {
+                    
+                    
+                        }
+                    }
+                }
             }
         }
     }
 
     .button {
-        padding: 15px;
+        display: flex;
+        height: 30px;
+        padding: 10px;
         margin-right: 10px;
         text-decoration: none;
         position: relative;
@@ -29,8 +58,8 @@ header {
         background-color: #333;
         border: 2px solid #333;
         color: #fff;
-        line-height: 50px;
-        font-size: 20px;
+        line-height: 25px;
+        font-size: 17px;
     }
 
     .button:hover {
@@ -62,9 +91,10 @@ header {
     }
 
     .icon {
-        font-size: 55px;
+        font-size: 50px;
         padding-bottom: 15px;
         color: #333;
+        margin-left: 10px;
     }
 
     .icon:hover {
@@ -73,15 +103,19 @@ header {
         background-color: #99CC99;
     }
 
-    // .button {
-    //     display: inline-block;
-    //     padding: 0.5em 1em;
-    //     text-decoration: none;
-    //     background: #668ad8;
-    //     color: #FFF;
-    //     border-bottom: solid 4px #627295;
-    //     border-radius: 3px;
-    // }
+    .icon {
+        font-size: 50px;
+        padding-bottom: 15px;
+        color: #333;
+        margin-left: 10px;
+    }
+
+    .icon:hover {
+        border-color: blue;
+        color: red;
+        background-color: #99CC99;
+    }
+
     a {
         text-decoration: none;
         color: black;
