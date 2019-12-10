@@ -17,7 +17,7 @@
           =f.text_area :name, placeholder:"言葉を残した人の名前を入力してください", cols:"30", rows:"4", class:"new__contents__field__input__word__box"
       .new__contents__field__input__genre
         %h2.new__contents__field__input__genre-title
-          genre
+          genre (※Required)
         .new__contents__field__input__genre__box
           .new__contents__field__input__genre__box__top
             = t.collection_select :genre_id,Genre.all, :id,:name,{include_blank: '---'}, class:"collection_box"
