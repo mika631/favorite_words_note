@@ -20,8 +20,9 @@ class WordcreatersController < ApplicationController
 
   private
     def wordcreater_params
-      params.require(:wordcreater).permit(:id, :name, words_attributes:[:id, :word, :image, :genre_id, :condition])
+      params.require(:wordcreater).permit(:id, :name, words_attributes:[:id, :word, :image, :genre_id]).merge(user_id: current_user.id)
     end
+
 
     def move_to_index
     redirect_to controller: :words,action: :index  unless user_signed_in?
